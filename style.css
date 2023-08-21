@@ -54,11 +54,14 @@ h2::after {
 	position: relative;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
-.carousel .item .img-box {
+.carousel .item .img-fluid {
 	height: 220px;
 	margin-bottom: 20px;
 	width: 100%;
 	position: relative;
+}
+img.img-fluid{
+	padding: 10px 90px;
 }
 .carousel .item img {	
 	max-width: 100%;
@@ -93,6 +96,18 @@ h2::after {
 	background: #7ac400;
 	box-shadow: none;
 }
+.thumb-content{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between ;
+	align-items: center;
+	
+}
+.carousel .img-fluid{
+	width:146px;
+	height: 220px;
+}
+
 .carousel .thumb-content .btn i {
 	font-size: 14px;
 	font-weight: bold;
@@ -264,10 +279,120 @@ h2::after {
     z-index: 99999;
     right: -400px; /* Start off the screen */
     background-color: white;
-    color: black; /* Change text color for visibility */
-    top: 60px;
-    transition: 0.3s;
-    padding-top: 60px;
+    color: black !important; /* Change text color for visibility */
+    top:0px;
+    transition: 0.9s;
+    padding-top: 20px;
     width: 400px;
     height: 100%;
+	
+}
+
+button.close {
+	color:black ;
+	
+	background-color: rgb(240, 237, 237);
+    width: 30px;
+	margin-bottom: 5px;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 10px;
+	border:0.2px solid;
+	text-align: center;
+	opacity: 1;
+}
+
+.button:hover{
+	background-color:red !important;
+
+}
+.price {
+	position: absolute;
+	bottom: 80px;
+	left:10px;
+	color: #000;
+	
+	background-color: white;
+	border:1px solid;
+	padding:0px 5px;
+}
+
+.cart-img {
+	
+	width:120px;
+	height:120px;
+	
+	
+}
+
+.cart-box{
+	margin-top:50px;
+	margin-left:1rem;
+	display: grid;
+	grid-template-columns: 29% 45% 10%;
+	align-items: center;
+	gap:1.5rem;
+	
+}
+
+.detail-box {
+	display:grid;
+	row-gap:0.5rem;
+}
+
+.cart-product-title{
+	font-size:1rem;
+	text-transform: uppercase;
+}
+
+.carte-price{
+	font-weight: 500;
+}
+.cart-quantity{
+	border:1px solid var;
+	width:2.4rem;
+	text-align: center;
+	font-size: 1rem;
+}
+.cart-remove{
+	font-size:24px;
+	cursor:pointer;
+	color:red;
+}
+
+.total{
+	display:flex;
+	justify-content: flex-end;
+	margin-top: 4rem;
+	border-top:1px solid black;
+	margin-right:1rem;
+	
+
+}
+
+.total-title{
+	font-size:1rem;
+	font-weight:600;
+
+}
+
+.total-price{
+	margin-left: 0.5rem; 
+}
+
+.btn-buy{
+	display:flex;
+	margin:1.5rem auto 0 auto;
+	padding: 12px 20px;
+	border:none;
+	background-color:rgb(232, 117, 117);
+	font-size: 1rem;
+	font-weight: 500;
+	cursor:pointer;
+	
+}
+.btn-buy:hover{
+	background-color: black;
+	color:white;
+
 }
